@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @page{
+            size: Letter;
+            margin: 0in 0.44in 0.2in 0.44in;
+            orientation: landscape;
+        }
+        body{
+            font-family:'Courier New', Courier, monospace;
+            width: fit-content;
+            height: fit-content;
+        }
+        h2{
+            margin-top: 0;
+            text-align: center;
+            color: white;
+            padding: 10px 0 10px 0;
+            background-color:brown;
+        }
+        .cert{
+            border: 3px dotted;
+        }
+        p{
+            text-align: center;
+            margin: 90px 40px 40px 40px;
+            padding: 0 90px 0 90px;
+        }
+        #signs{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 40px 20px 40px;
+        }
+        .orgn span{
+            font-size: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cert">
+        <h2>Coding Club | College Name</h2>
+        <p>This is to certify that {{name}} has participated in <b>Some code event</b> organized by <b>Coding Club</b>, the coding club of<b> College Name</b> </p>
+        <div id="signs">
+            <div class="orgn" id="one">
+                <h4>Designation</h4>
+                <span>First Last</span><br>
+                <img src="sign1.jpg" alt="Sign One">
+            </div>
+            <div class="orgn" id="two">
+                <h4>Designation</h4>
+                <span>First Last</span><br>
+                <img src="sign2.jpg" alt="Sign Two">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
